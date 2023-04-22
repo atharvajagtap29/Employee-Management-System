@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+
+
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	<servlet>
+		<servlet-name>register</servlet-name>
+		<servlet-class>com.EMS.Register</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>register</servlet-name>
+		<url-pattern>/Register</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.EMS.Login</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/AddEmployee</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>addemp</servlet-name>
+		<servlet-class>com.EMS.AddEmp</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>addemp</servlet-name>
+		<url-pattern>/Addemp</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- this is the only mapping we require right now -->
+	<!-- Show employee details -->
+	<servlet>
+		<servlet-name>showinfo</servlet-name>
+		<servlet-class>com.EMS.ShowEmployees</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>showinfo</servlet-name>
+		<url-pattern>/showemp</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>delete</servlet-name>
+		<servlet-class>com.EMS.Delete</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/deleteurl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>edit</servlet-name>
+		<servlet-class>com.EMS.EditScreen</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>edit</servlet-name>
+		<url-pattern>/editurl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>edit2</servlet-name>
+		<servlet-class>com.EMS.EditRecord</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>edit2</servlet-name>
+		<url-pattern>/edit</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+</web-app>
+
